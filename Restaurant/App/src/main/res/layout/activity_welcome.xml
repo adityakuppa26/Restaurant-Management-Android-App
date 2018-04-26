@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wbg"
+    tools:context="example.home.restaurant.Welcome">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:alpha="1"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:alpha="0"
+        android:textStyle="bold"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/phno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="42dp"
+        android:alpha="0"
+        android:ems="10"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:hint="Enter your phone number"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/phno"
+        android:layout_below="@+id/phno"
+        android:layout_marginTop="54dp"
+        android:alpha="0"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/background_light"
+        android:fontFamily="casual"
+        android:onClick="menu"
+        android:text="CONTINUE"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
